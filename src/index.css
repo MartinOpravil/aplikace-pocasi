@@ -36,6 +36,26 @@ main {
   border-radius: 25px;
 }
 
+canvas {
+  height: 180px;
+  width: 270px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left:50px;
+}
+
+.charts-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding-bottom:25px;
+}
+
 .title {
   color:#FFF;
   font-size: 32px;
@@ -67,7 +87,7 @@ main {
 .gps {
   display: flex;
   width:25px;
-  height: 35px;
+  height: auto;
   cursor: pointer;
   padding: 10px;
   transition: 0.2s ease-in-out;
@@ -80,7 +100,7 @@ main {
 
 .gps img {
   width:25px;
-  height: 35px;
+  height: auto;
 }
 
 .search-box .search-bar {
@@ -108,6 +128,21 @@ main {
   opacity: 1;
 }
 
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:-15px;
+  padding-bottom: 45px;
+  color: #FB4D3D;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .location-box {
   display: flex;
   flex-direction: column;
@@ -128,6 +163,7 @@ main {
   font-style: italic;
   text-align: center;
   text-shadow: 2px 2px rgba(50,50,70,0.5);
+  padding-bottom: 35px;
 }
 
 .weather-box {
@@ -140,7 +176,7 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255,255,255,0.2);
+  background-color: #345995;
   border-radius: 16px;
 
   padding: 15px 25px;
@@ -161,6 +197,9 @@ main {
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:#FFF;
   font-size: 16px;
   font-weight: 300;
@@ -169,6 +208,7 @@ main {
   margin-top :-15px;
   cursor: default;
   user-select: none;
+  padding-top:0px;
 }
 
 .humidity {
